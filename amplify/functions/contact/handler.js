@@ -2,7 +2,7 @@ import { SNSClient, PublishCommand } from '@aws-sdk/client-sns';
 
 const sns = new SNSClient();
 
-export const handler = async (event: any) => {
+export const handler = async (event) => {
   const { email, message } = JSON.parse(event.body);
 
   await sns.send(

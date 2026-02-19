@@ -14,10 +14,7 @@ const contactTopic = new sns.Topic(contactStack, 'ContactTopic', {
   displayName: 'Contact Form Submissions',
 });
 
-backend.contactFunction.resources.lambda.addEnvironment(
-  'TOPIC_ARN',
-  contactTopic.topicArn
-);
+backend.contactFunction.addEnvironment('TOPIC_ARN', contactTopic.topicArn);
 
 contactTopic.grantPublish(backend.contactFunction.resources.lambda);
 
