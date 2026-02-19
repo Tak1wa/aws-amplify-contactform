@@ -1,5 +1,5 @@
 import { defineBackend } from '@aws-amplify/backend';
-import { contactFunction } from './functions/contact/resource.js';
+import { contactFunction } from './functions/contact/resource';
 import { Stack } from 'aws-cdk-lib';
 import * as sns from 'aws-cdk-lib/aws-sns';
 import * as apigateway from 'aws-cdk-lib/aws-apigateway';
