@@ -11,6 +11,8 @@
     "@aws-amplify/backend": "^1.21.0",
     "@aws-amplify/backend-cli": "^1.8.2",
     "aws-amplify": "^6.16.2",
+    "aws-cdk-lib": "^2.238.0",
+    "constructs": "^10.5.1",
     "next": "16.1.6",
     "react": "19.2.3",
     "react-dom": "19.2.3"
